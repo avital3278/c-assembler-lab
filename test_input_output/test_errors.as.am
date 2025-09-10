@@ -1,0 +1,10 @@
+START:	mov     r1           ; Error: Missing second operand for instruction
+.data   1, , 5       ; Error:	Double comma / empty value in .data
+.string hello        ; Error:	Missing quotation marks in .string
+stop    extra        ; Error:	Extra operand for 'stop' (should have none)
+LABEL1:	.data   5
+LABEL1:	.string "oops"       ; Error: Duplicate label definition
+.extern 123bad       ; Error:	Invalid label name for .extern (starts with
+	number)
+jmp                 ; Error:	Missing operand for jump instruction
+fakecmd r2          ; Error:	Invalid / unknown command name
