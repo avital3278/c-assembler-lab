@@ -17,15 +17,17 @@ Main features:
 - Handles labels, macros, data directives, and instructions  
 - Validates syntax and reports errors  
 
+
 ## 📁 Project Structure
 
 - `assembler.c` – Main program logic  
 - `macro_preproc.c/h` – Preprocessor for macros  
-- `pass1.c/h`, `pass2.c/h` – First and second pass  
+- `step1.c/h`, `pass2.c/h` – First and second pass  
 - `label.c/h`, `instr_utils.c/h`, `line_parser.c/h`  
 - `code_writer.c/h`, `data_directives.c/h`, `Errors.c/h`  
-- `makefile` – For compiling the project  
+- `makefile` – For compiling the project
 
+  
 ## 🧪 Example Usage
 
 ```bash
